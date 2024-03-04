@@ -1,5 +1,116 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .page {
+  
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: 1024px 768px;
+  
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+.header {
+ display: flex;
+ justify-content: center; 
+ flex-direction: column;
+ 
+}
+
+.header__theme-menu {
+  color: var(--accent-color);
+  font-family: var(--accent-font, "IBM Plex mono");
+  font-size: var(--accent-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.header__theme-menu-list {
+  display: flex;
+  gap: 23px;
+}
+.header__theme-menu-button {
+background-color: transparent;
+border: 1px solid transparent;
+margin-top: 20px;
+text-transform: lowercase;
+}
+.header__theme-menu-button_type_dark {
+  border: 1px solid;
+  padding: 1.5px 13px;
+  
+}
+.decoration {
+  color: var(--accent-color);
+  display: flex;
+  text-transform: uppercase;
+  font-family: var(--accent-font, "IBM Plex mono");
+  position: relative;
+  margin-top: 20px;
+}
+.decoration-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  
+}
+.decoration__point {
+  content: ''; 
+  position: absolute; 
+  top: 55%; 
+  right: -17px; 
+  width: 9px; 
+  height: 9px; 
+  background-color: var(--accent-color); 
+  border-radius: 50%; 
+  box-shadow: 0px 0px 4px 2px var(--accent-color); 
+  transform: translateY(-50%);
+}
+.decoration::before  {
+  content: ''; 
+  position: absolute; 
+  top: 0px ; 
+  right: -25px; 
+  width: 1px; 
+  height: calc(100%); 
+  background-color: var(--accent-color); 
+}
+.decoration::after {
+  content: ''; 
+  position: absolute; 
+  top: -10px ; 
+  right: -15px; 
+  width: 1px; 
+  height: calc(100%); 
+  transform: rotate(90deg);
+  background-color: var(--accent-color); 
+}
+.header__title {
+  color: #DB00FF;
+  font-size: 157px;
+  font-family: var(--accent-font, 'IBM Plex mono');
+  box-shadow: var(--accent-color);
+  line-height: 129.53px;
+  text-shadow: 4px 4px var(--accent-color);
+  display: flex;
+  padding-top: 219px;
+}
+.header__text-title {
+  font-family: var(--accent-font, 'IBM Plex mono');
+  font-size: var(--accent-size);
+  width: 491px;
+  height: 71px;
+  line-height: 23.4px;
+  background-color: var(--accent-color);
+  color: #000028;
+  margin-top: 163px;
+  margin-left: 513px;
 }
