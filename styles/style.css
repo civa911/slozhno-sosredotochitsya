@@ -20,7 +20,7 @@
  display: flex;
  justify-content: center; 
  flex-direction: column;
- 
+ max-width: 1024px;
 }
 
 .header__theme-menu {
@@ -30,22 +30,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  padding-left: 400px;
 }
 .header__theme-menu-list {
   display: flex;
   gap: 23px;
+  
 }
 .header__theme-menu-button {
 background-color: transparent;
 border: 1px solid transparent;
 margin-top: 20px;
-text-transform: lowercase;
+cursor: pointer;
 }
 .header__theme-menu-button_type_dark {
   border: 1px solid;
   padding: 1.5px 13px;
-  
+  text-align: center; 
 }
 .decoration {
   color: var(--accent-color);
@@ -54,15 +55,19 @@ text-transform: lowercase;
   font-family: var(--accent-font, "IBM Plex mono");
   position: relative;
   margin-top: 20px;
+  justify-content: right;
+  
 }
 .decoration-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:space-between;
   flex-direction: row-reverse;
+  padding-right: 40px;
   
 }
 .decoration__point {
+  
   content: ''; 
   position: absolute; 
   top: 55%; 
@@ -78,18 +83,18 @@ text-transform: lowercase;
   content: ''; 
   position: absolute; 
   top: 0px ; 
-  right: -25px; 
+  right: -26px; 
   width: 1px; 
-  height: calc(100%); 
+  height: calc(100% + 5px); 
   background-color: var(--accent-color); 
 }
 .decoration::after {
   content: ''; 
   position: absolute; 
-  top: -10px ; 
-  right: -15px; 
+  top: -13px ; 
+  right: -14px; 
   width: 1px; 
-  height: calc(100%); 
+  height: calc(100% + 5px); 
   transform: rotate(90deg);
   background-color: var(--accent-color); 
 }
@@ -101,7 +106,8 @@ text-transform: lowercase;
   line-height: 129.53px;
   text-shadow: 4px 4px var(--accent-color);
   display: flex;
-  padding-top: 219px;
+  padding-top: 270px;
+  padding-right: 270px;
 }
 .header__text-title {
   font-family: var(--accent-font, 'IBM Plex mono');
@@ -111,6 +117,32 @@ text-transform: lowercase;
   line-height: 23.4px;
   background-color: var(--accent-color);
   color: #000028;
-  margin-top: 163px;
+  margin-top: 115px;
   margin-left: 513px;
+}
+.decoration__point-bottom {
+  
+  display: flex;
+  width:25px;
+  height: 25px;
+  margin-top: 90px;
+  margin-left: 20px;
+  position: relative;
+}
+.decoration__point-bottom::before,
+.decoration__point-bottom::after {
+  content: ''; 
+  position: absolute;
+  background-color: var(--accent-color);
+}
+.decoration__point-bottom::before {
+  width: 1px; 
+  height: 100%; 
+  left: 0%; 
+  transform: translateX(-50%);
+}
+.decoration__point-bottom::after {
+  width: 100%; 
+  height: 1px;
+  bottom: 0;
 }
