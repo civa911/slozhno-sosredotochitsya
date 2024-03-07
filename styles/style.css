@@ -153,17 +153,17 @@ cursor: pointer;
 
 /* основной контент */
 .main-content {
-  display: flex;
+  display: grid;
   width: 1024px;
   margin: auto;
   padding-top: 60px;
   background-color: var(--bg-color);
-  
 }
 .block_first {
  display: grid;
  gap: 20px;
  grid-template-columns: 1fr 2fr;
+ margin-bottom: 80px;
 }
 .main-content-titile {
   font-family: var(--accent-font, 'IBM Plex mono');
@@ -171,9 +171,8 @@ cursor: pointer;
   font-size: var(--accent-size);
   padding-left: 20px;
 }
-.block-content {
+.block-content-first {
   display: grid;
-  
   margin-right: 20px;  
 }
 .main-content-titile-h3 {
@@ -210,4 +209,23 @@ cursor: pointer;
 }
 .link-main-content:focus {
   outline: 1px solid var(--main-text-color);
+}
+
+
+.block_second {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.block-content-second {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;  
+  margin-left: 20px; 
+  gap: 20px; 
+}
+.blokcks_two {
+  display: flex;
+  flex-direction: column;
 }
