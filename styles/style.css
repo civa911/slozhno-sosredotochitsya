@@ -395,6 +395,7 @@
   display: flex;
   flex-direction: column;
   gap: 677px;
+  width: 1024px;
 }
 
 .footer-decoration__point-top {
@@ -493,6 +494,7 @@
     display: flex;
     flex-direction: column;
     gap: 938px;
+    width: 768px;
   }
 
   .footer-decoration__point-top {
@@ -627,6 +629,10 @@
   .footer-decoration__point-bottom {
     margin-left: 4px;
   }
+  .main-content-titile-h3-gallery {
+    width: 729px;
+    margin-left: 20px;
+  }
 }
 
 @media (width <=375px) {
@@ -648,6 +654,7 @@
     display: flex;
     flex-direction: column;
     gap: 590px;
+    width: 375px;
   }
 
   .footer-decoration__point-top {
