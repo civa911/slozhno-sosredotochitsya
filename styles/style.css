@@ -6,22 +6,22 @@
 }
 
 .page {
-  background-position: center;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1024px;
   width: 100%;
+  max-width: 1024px;
   font-size: 18px;
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
 .header {
   display: flex;
-  min-height: 100vh;
   display: block;
+  min-height: 100vh;
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: top;
@@ -30,14 +30,14 @@
 
 .header__theme-menu {
   display: flex;
+  grid-area: header__theme-menu;
   justify-content: center;
   align-items: center;
   margin: auto;
   margin-top: 20px;
   color: var(--accent-text-color);
-  font-family:"IBM Plex mono";
+  font-family: "IBM Plex mono";
   font-size: var(--accent-size);
-  grid-area: header__theme-menu;
 }
 
 .header__theme-menu-list {
@@ -48,9 +48,9 @@
 
 .header__theme-menu-button {
   border: 1px solid transparent;
+  text-align: center;
   background-color: transparent;
   cursor: pointer;
-  text-align: center;
 }
 
 .header__theme-menu-button:hover {
@@ -77,14 +77,14 @@
 }
 
 .rec-indicator {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 18px;
   position: relative;
-  justify-content: flex-end;
-  margin-right: 28px;
+  display: flex;
   grid-area: rec-indicator;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 28px;
+  font-size: 18px;
+  text-align: center;
 }
 
 .rec-text {
@@ -102,83 +102,92 @@
 .rec-dot {
   width: 10px;
   height: 10px;
-  background-color: var(--accent-color-point); 
   border-radius: 50%;
   box-shadow: 0px 0px 4px 2px var(--accent-color-point);
+  background-color: var(--accent-color-point);
   background-color: var(--accent-color-point);
 }
 
 .rec-line {
   position: absolute;
-  background-color: var(--accent-text-color); 
+  background-color: var(--accent-text-color);
 }
 
 .top-line {
   top: -8px;
   left: 50%;
-  transform: translateX(-50%);
   width: 25px;
   height: 1px;
+  transform: translateX(-50%);
 }
 
 .right-line {
-  right: -8px;
   top: 50%;
-  transform: translateY(-50%);
+  right: -8px;
   width: 1px;
   height: 25px;
+  transform: translateY(-50%);
 }
+
 .corner-top {
   display: flex;
   justify-content: flex-end;
   margin-right: 33px;
 }
+
 .corner-bottom {
   display: flex;
   justify-content: flex-start;
-  margin-left: 33px;
   margin-top: 26px;
+  margin-left: 33px;
 }
+
 .corner {
   display: flex;
   justify-content: flex-start;
   margin-top: 101px;
   margin-left: 33px;
 }
+
 .corner-container {
   position: relative;
 }
+
 .corner-line {
   position: absolute;
-  background-color: var(--accent-text-color); 
+  background-color: var(--accent-text-color);
 }
+
 .corner-top-line {
   bottom: -13px;
   left: 50%;
-  transform: translateX(-50%);
   width: 25px;
   height: 1px;
+  transform: translateX(-50%);
 }
+
 .corner-right-line {
-  left: -13px;
   top: 50%;
-  transform: translateY(-50%);
+  left: -13px;
   width: 1px;
   height: 25px;
+  transform: translateY(-50%);
 }
+
 .corner-footer-top-line {
   top: -13px;
   left: 50%;
-  transform: translateX(-50%);
   width: 25px;
   height: 1px;
+  transform: translateX(-50%);
 }
+
 .corner-footer-right-line {
-  right: -13px;
   top: 50%;
-  transform: translateY(-50%);
+  right: -13px;
   width: 1px;
   height: 25px;
+  transform: translateY(-50%);
 }
 
 .decoration-nav {
@@ -189,8 +198,8 @@
 
 .header__theme-menu-item {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 70px;
   height: 26px;
 }
@@ -241,10 +250,10 @@
   justify-content: center;
   color: var(--bg-text-color);
   font-family: var(--accent-font, "IBM Plex mono");
+  font-weight: 700;
   font-size: var(--accent-size);
   line-height: 23.4px;
   background-color: var(--accent-color);
-  font-weight: 700;
 }
 
 .decoration__point-bottom {
@@ -308,17 +317,18 @@
   margin-bottom: 10px;
   color: var(--bg-text-color);
   font-family: var(--accent-font, "IBM Plex mono");
+  font-weight: bold;
   font-size: var(--accent-size);
   background-color: var(--accent-color);
-  font-weight: bold;
 }
+
 .main-content-titile-how {
   margin-bottom: 20px;
   color: var(--bg-text-color);
   font-family: var(--accent-font, "IBM Plex mono");
+  font-weight: bold;
   font-size: var(--accent-size);
   background-color: var(--accent-color);
-  font-weight: bold;
 }
 
 .main-content-text {
@@ -364,6 +374,7 @@
   gap: 10px;
   margin-bottom: 60px;
 }
+
 .main-content_what {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -388,10 +399,6 @@
   grid-template-columns: 1fr 2fr;
   gap: 20px;
   margin-bottom: 62px;
-}
-
-.blokc {
-
 }
 
 .blokcks {
@@ -603,7 +610,6 @@
   }
 
   .footer-decoration__point-top {
-   
     margin-left: 664px;
   }
 
@@ -613,11 +619,11 @@
 
   .decoration-nav {
     display: grid;
-    gap: 20px;
     justify-content: end;
     align-items: start;
+    gap: 20px;
   }
-  
+
   .main-content {
     display: grid;
     align-items: center;
@@ -639,8 +645,9 @@
   }
 
   .rec-indicator {
-    margin-right: 27px
+    margin-right: 27px;
   }
+
   .corner {
     margin-top: 150px;
   }
@@ -659,7 +666,8 @@
     margin-top: 145px;
     margin-left: 384px;
   }
-  .blokcks{
+
+  .blokcks {
     margin-top: 4px;
   }
 
@@ -708,13 +716,11 @@
 
   /* галлерея */
   .sunset {
-
     width: 479px;
     height: 192px;
   }
 
   .ice-cream {
-
     width: 229px;
     height: 441px;
   }
@@ -750,6 +756,7 @@
   .footer-decoration__point-bottom {
     margin-left: 4px;
   }
+
   .main-content-titile-gallery {
     width: 729px;
     margin-left: 20px;
@@ -758,11 +765,10 @@
 
 @media (width <=375px) {
   .page {
-    min-width: 375px;
     width: 100%;
+    min-width: 375px;
     object-fit: cover;
     background-size: 375px 468px;
-    
   }
 
   .header {
@@ -779,13 +785,12 @@
   }
 
   .footer-decoration__point-top {
-    
     margin-left: 290px;
   }
 
   .footer-decoration__point-bottom {
-    margin-left: 11px;
     margin-bottom: -12px;
+    margin-left: 11px;
   }
 
   .decoration {
@@ -794,25 +799,29 @@
 
   .decoration-nav {
     display: grid;
-    gap: 20px;
     justify-content: end;
+    gap: 20px;
   }
 
   .rec-indicator {
-    margin-right: 18px;
     margin-top: -7px;
+    margin-right: 18px;
   }
+
   .corner {
     margin-top: 42px;
     margin-left: 23px;
   }
-  .main-content_what{
+
+  .main-content_what {
     grid-template-columns: none;
     margin-bottom: 10px;
   }
+
   .blokcks {
     margin-top: 1px;
   }
+
   .main-content {
     display: grid;
     align-items: center;
@@ -824,10 +833,10 @@
   .header__title {
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
     padding-top: 69px;
+    padding-left: 10px;
     font-size: 116px;
-    line-height:95.7px;
+    line-height: 95.7px;
   }
 
   .header__theme-menu {
@@ -857,8 +866,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 30px;
     width: 375px;
+    margin-bottom: 30px;
   }
 
   .block-content-why {
@@ -875,8 +884,8 @@
 
   .block_what {
     display: flex;
-    margin-bottom: 2px;
     width: 375px;
+    margin-bottom: 2px;
   }
 
   .second {
@@ -889,10 +898,12 @@
     width: 355px;
     margin-left: 10px;
   }
-  .corner-top{
-    margin-right: 23px;
+
+  .corner-top {
     margin-top: 2px;
+    margin-right: 23px;
   }
+
   .corner-bottom {
     margin-left: 23px;
   }
@@ -901,9 +912,9 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin-bottom: 30px;
     width: 375px;
     margin-top: 25px;
+    margin-bottom: 30px;
   }
 
   .block-content-how {
@@ -919,8 +930,8 @@
   .block_gallery {
     display: grid;
     gap: 10px;
-    margin-bottom: 40px;
     width: 375px;
+    margin-bottom: 40px;
   }
 
   .block-content-gallery {
@@ -933,13 +944,11 @@
 
   /* галлерея */
   .sunset {
-
     width: 355px;
     height: 142px;
   }
 
   .ice-cream {
-
     width: 355px;
     height: 355px;
   }
