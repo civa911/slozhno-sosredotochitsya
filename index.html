@@ -18,7 +18,6 @@
 <body class="page">
   <header class="header decorated-zone">
     <div class="decoration-nav">
-    
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -40,10 +39,19 @@
           </li>
         </ul>
       </nav>
-      <span class="decoration decoration__point" aria-hidden="true">rec
-        
-      </span>
+      
+      <div class="rec-indicator">
+        <span class="rec-text">REC</span>
+        <span class="rec-dot-container">
+            <span class="rec-dot"></span>
+            <span class="rec-line top-line"></span>
+            <span class="rec-line right-line"></span>
+        </span>
+      </div>
+
     </div>
+
+  
     <h1 class="header__title">
       no focus
     </h1>
@@ -54,6 +62,12 @@
       </p>
     </div>
     <!-- <div class="decoration__point-bottom"></div> -->
+    <div class="corner">
+      <span class="corner-container">
+          <span class="corner-line corner-top-line"></span>
+          <span class="corner-line corner-right-line"></span>
+      </span>
+    </div>
   </header>
   <main class="main-content">
     <section class="block_why">
@@ -86,7 +100,7 @@
       </div>
     </section>
     <section class="block_what">
-      <h2 class="main-content-titile">
+      <h2 class="main-content-titile main-content_what">
         Что снижает концентрацию внимания?
       </h2>
       <div class="block-content-what">
@@ -133,10 +147,10 @@
         Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)
       </h2>
       <div class="block-content-how">
-        <article class="main-content-titile-h3">
+        <article class="main-content-titile-how">
           5 простых (на самом деле не очень) советов
         </article>
-        <div class="blokcks">
+        <div class="blokc">
           <h4 class="main-content-titile-h3-third">
             Представьте небо и облака
           </h4>
@@ -148,7 +162,7 @@
             волноваться о потенциальных проблемах из будущего.
           </p>
         </div>
-        <div class="blokcks">
+        <div class="blokc">
           <h4 class="main-content-titile-h3-third">
             Включите музыку
           </h4>
@@ -158,7 +172,7 @@
             «белым шумом» или нейромузыкой.
           </p>
         </div>
-        <div class="blokcks">
+        <div class="blokc">
           <h4 class="main-content-titile-h3-third">
             Прогуляйтесь
           </h4>
@@ -171,7 +185,7 @@
             работать. Но и простая двадцатиминутная прогулка — тоже отличный вариант.
           </p>
         </div>
-        <div class="blokcks">
+        <div class="blokc">
           <h4 class="main-content-titile-h3-third">
             Хорошо ешьте
           </h4>
@@ -181,7 +195,7 @@
             рис, хлеб из цельнозерновой пшеницы.
           </p>
         </div>
-        <div class="blokcks">
+        <div class="blokc">
           <h4 class="main-content-titile-h3-third">
             Читайте
           </h4>
@@ -211,8 +225,18 @@
       focus
     </h2>
     <div class="footer-decorationw">
-      <div class="footer-decoration__point-top"></div>
-      <div class="footer-decoration__point-bottom"></div>
+      <div class="corner-top">
+        <span class="corner-container">
+            <span class="corner-line corner-footer-top-line"></span>
+            <span class="corner-line corner-footer-right-line"></span>
+        </span>
+      </div>
+      <div class="corner-bottom">
+        <span class="corner-container">
+            <span class="corner-line corner-top-line"></span>
+            <span class="corner-line corner-right-line"></span>
+        </span>
+      </div>
     </div>
   </footer>
   <script src="./scripts/script.js"></script>
