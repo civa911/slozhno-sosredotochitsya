@@ -679,6 +679,7 @@
   .block_why {
     display: flex;
     gap: 25px;
+    width: 768px
   }
 
   .block-content-why {
@@ -693,6 +694,7 @@
 
   .block_what {
     display: flex;
+    width: 768px
   }
 
   .block-content-what {
@@ -704,6 +706,7 @@
   .block_how {
     display: flex;
     gap: 25px;
+    width: 768px
   }
 
   .block-content-how {
@@ -712,6 +715,7 @@
 
   .block_gallery {
     display: grid;
+    width: 768px
   }
 
   .block-content-gallery {
