@@ -530,7 +530,6 @@
   /* position: absolute; */
   display: flex;
   justify-content: center;
-  justify-content: center;
   box-shadow: var(--accent-color);
   color: var(--title-color);
   font-family: var(--accent-font, "IBM Plex mono"), sans-serif;
