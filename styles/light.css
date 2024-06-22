@@ -19,7 +19,7 @@
   --text-shadow:#ff0070;
   --page-padding:10px;
   --hover-button-color:rgba(50, 49, 45, 0.4);
-  --accent-color-point:var(--bg-color);
+  --accent-color-point:none;
   --text-decoration-color:#FFF1F7;
   
 }
