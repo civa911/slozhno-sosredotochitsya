@@ -713,6 +713,7 @@
   .main-content-titile {
     display: grid;
     width: 251px;
+    margin-bottom: 7px;
   }
 
   .block_what {
@@ -722,7 +723,7 @@
 
   .block-content-what {
     grid-template-columns: repeat(1, 1fr);
-    gap: 0px;
+    gap: 17px;
     width: 728px;
   }
 
@@ -896,9 +897,9 @@
   .block_why {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 14px;
     width: 375px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .block-content-why {
@@ -916,12 +917,12 @@
   .block_what {
     display: flex;
     width: 375px;
-    margin-bottom: 2px;
+    margin-bottom: 26px;
   }
 
   .block-content-what {
     grid-template-columns: repeat(1, 1fr);
-    gap: 0px;
+    gap: 19px;
     width: 355px;
     margin-left: 10px;
   }
@@ -938,10 +939,10 @@
   .block_how {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 14px;
     width: 375px;
     margin-top: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 
   .block-content-how {
