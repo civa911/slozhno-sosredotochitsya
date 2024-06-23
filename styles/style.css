@@ -7,10 +7,30 @@
 
 /* * { outline: 1px solid red; } */
 
+body, html {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header, .main-content, .footer {
+ 
+  /* max-width: 1200px; */
+  /* padding: 0 20px; */
+  box-sizing: border-box;
+}
+
+.block-content-why, .block-content-what, .block-content-how, .block-content-gallery {
+  display: flex;
+  flex-direction: column;
+  
+}
+
 .page {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* align-items: center; */
   width: 100%;
   max-width: 1024px;
   font-size: 18px;
@@ -325,8 +345,8 @@
 /* основной контент */
 .main-content {
   display: grid;
-  max-width: 1022px;
-  margin: auto;
+  max-width: 1024px;
+  /* margin: auto; */
   padding-top: 60px;
   background-color: var(--bg-color);
 }
@@ -652,7 +672,7 @@
     display: grid;
     align-items: center;
     max-width: 768px;
-    /* margin: 0; */
+    margin: auto;
   }
 
   .header__title {
