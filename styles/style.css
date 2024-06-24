@@ -158,7 +158,6 @@ body, html {
   position: relative;
   display: flex;
   justify-content: flex-end;
-
   margin-left: 990px;
 }
 
@@ -372,7 +371,7 @@ body, html {
   row-gap: 14px;
 }
 
-.main-content-titile-h3 {
+.main-content-title {
   /* margin-bottom: 10px; */
   color: var(--bg-text-color);
   font-family: var(--accent-font, "IBM Plex mono"), sans-serif;
