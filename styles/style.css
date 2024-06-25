@@ -49,7 +49,7 @@ body, html {
     min-height: 668px;
     align-items: start;
     grid-template-rows: 1fr min-content 1fr;
-    width: 1022px;
+    max-width: 1024px;
   /* background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: top;
@@ -255,7 +255,7 @@ body, html {
   justify-content: center;
   align-items: center;
   /* width: 70px; */
-  height: 26px;
+  /* height: 26px; */
 }
 
 .decoration::before {
@@ -291,14 +291,14 @@ body, html {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 129.53px;
   text-shadow: 4px 4px var(--text-shadow);
-  max-width: 1022px;
+  max-width: 1024px;
 }
 
 .header__text-cont {
   display: flex;
-  /* width: 491px; */
+  width: 491px;
   margin-top: 14.8vh;
-  margin-left: 66.8vh;
+  margin-left: 513px;
 }
 
 .header__text-title {
@@ -345,7 +345,7 @@ body, html {
 .main-content {
   display: grid;
   max-width: 1024px;
-  /* margin: auto; */
+  margin: auto;
   padding-top: 60px;
   background-color: var(--bg-color);
 }
@@ -354,7 +354,7 @@ body, html {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
-  max-width: 1022px;
+  max-width: 1024px;
   margin-bottom: 62px;
 }
 
@@ -430,7 +430,7 @@ body, html {
   display: grid;
   flex-direction: column;
   gap: 10px;
-  max-width: 1022px;
+  max-width: 1024px;
   margin-bottom: 60px;
 }
 
@@ -453,7 +453,7 @@ body, html {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
-  max-width: 1022px;
+  max-width: 1024px;
   margin-top: 20px;
   margin-bottom: 57px;
 }
@@ -490,7 +490,7 @@ body, html {
 .block_gallery {
   display: grid;
   gap: 20px;
-  max-width: 1022px;
+  max-width: 1024px;
   margin-bottom: 60px;
 }
 
@@ -549,7 +549,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1022px;
+  max-width: 1024px;
   height: 100vh;
   /* width: 100%; */
   min-height: 768px;
@@ -644,7 +644,7 @@ body, html {
 
   .header {
     max-width: 768px;
-    min-height: 1024px;
+    /* min-height: 1024px; */
   }
 
   .footer-decorationw {
