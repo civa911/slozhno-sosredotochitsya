@@ -1,38 +1,13 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* * {
-  outline: 1px solid red;
-} */
-
-/* body,
-html {
-  box-sizing: border-box;
-  margin: auto;
-  padding: 0;
-} */
-
-/* .block-content-why,
-.block-content-what,
-.block-content-how,
-.block-content-gallery {
-  display: flex;
-  flex-direction: column;
-} */
-
 .page {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   max-width: 1024px;
-  /* overflow-x: hidden; */
   font-size: 18px;
   background-image: var(--bg-image);
+  background-color: var(--bg-color);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -160,7 +135,6 @@ html {
   display: flex;
   align-items: flex-end;
   max-width: 1024px;
-  /* margin-top: -2px; */
 }
 
 .header__theme-menu-item {
@@ -206,7 +180,6 @@ html {
 .main-content {
   max-width: 1024px;
   padding-top: 60px;
-  background-color: var(--bg-color);
 }
 
 .block_why {
@@ -404,7 +377,7 @@ html {
   height: 100vh;
   min-height: 768px;
   text-align: center;
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
 }
 
 .footer__title {
@@ -451,7 +424,6 @@ html {
   }
 
   .main-content {
-    align-items: center;
     max-width: 768px;
   }
 
@@ -460,8 +432,9 @@ html {
   }
 
   .header__theme-menu {
-    margin-top: 29px;
-    margin-right: -60px;
+    position: absolute;
+    top: 6px;
+    right: 20px;
   }
 
   .rec-indicator {
@@ -470,7 +443,6 @@ html {
   }
 
   .header__theme-menu-list {
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -493,23 +465,16 @@ html {
   .block_why {
     display: flex;
     gap: 25px;
-    /* margin-bottom: 58px; */
   }
 
   .block-content-why {
-    display: grid;
     max-width: 472px;
   }
 
   .main-content-titile {
-    display: grid;
     width: 100%;
     max-width: 251px;
     margin-bottom: 7px;
-  }
-
-  .block_what {
-    display: flex;
   }
 
   .block-content-what {
@@ -526,14 +491,6 @@ html {
     width: 472px;
   }
 
-  .block_gallery {
-    display: grid;
-  }
-
-  .block-content-gallery {
-    display: grid;
-  }
-
   .footer {
     max-width: 768px;
   }
@@ -546,15 +503,14 @@ html {
     margin-top: 138px;
   }
 
-  .main-content-titile-gallery {
+  /* .main-content-titile-gallery {
     margin-left: 20px;
-  }
+  } */
 }
 
 @media (width <=425px) {
   .page {
     max-width: 425px;
-    object-fit: cover;
   }
 
   .header {
@@ -570,13 +526,7 @@ html {
     margin-bottom: 250px;
   }
 
-  .decoration-nav {
-    justify-content: end;
-    align-items: start;
-  }
-
   .main-content {
-    align-items: center;
     max-width: 425px;
   }
 
@@ -587,22 +537,9 @@ html {
     line-height: 95.7px;
   }
 
-  .header__theme-menu {
-    margin-top: 29px;
-    margin-right: -60px;
-  }
-
   .rec-indicator {
     margin-top: 23px;
     margin-right: 28px;
-  }
-
-  .header__theme-menu-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 16vh;
   }
 
   .header__text-cont {
@@ -612,14 +549,9 @@ html {
     max-width: 355px;
   }
 
-  .blokcks {
-    margin-top: 4px;
-  }
-
   .block_why {
     flex-direction: column;
     gap: 14px;
-    /* width: 375px; */
     margin-bottom: 32px;
   }
 
@@ -627,52 +559,29 @@ html {
     margin: 10px;
   }
 
-  .main-content-titile {
-    display: grid;
-    width: 251px;
-    margin-bottom: 7px;
-  }
-
-  .block_what {
-    display: flex;
-  }
-
-  .block-content-what {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 17px;
-  }
-
   .block_how {
     flex-direction: column;
   }
 
   .block-content-how {
-    width: 350px;
+    width: 395px;
     margin: 15px;
   }
 
   .block_gallery {
-    display: grid;
+    gap: 15px;
   }
 
   .block-content-gallery {
-    display: grid;
+    gap: 10px;
   }
 
   .footer {
     max-width: 425px;
   }
 
-  .footer__title {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-
   .decoration__point-bottom {
     margin-top: 138px;
-  }
-
-  .main-content-titile-gallery {
-    margin-left: 20px;
   }
 }
 
@@ -681,7 +590,6 @@ html {
   .page {
     width: 100%;
     min-width: 375px;
-    object-fit: cover;
   }
 
   .header {
@@ -732,20 +640,9 @@ html {
     padding-top: 40px;
   }
 
-  .header__title {
-    width: min-content;
-    padding-left: 10px;
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    line-height: 95.7px;
-  }
-
   .header__theme-menu {
-    margin-top: -33px;
-    margin-right: -56px;
-  }
-
-  .header__theme-menu-list {
-    margin-right: -24px;
+    right: 10px;
+    bottom: 557px;
   }
 
   .header__text-cont {
@@ -763,13 +660,11 @@ html {
   }
 
   .block-content-why {
-    display: grid;
     max-width: 355px;
     margin: 0px 10px;
   }
 
   .main-content-titile {
-    display: grid;
     max-width: 356px;
     padding-left: 10px;
   }
@@ -781,14 +676,12 @@ html {
   }
 
   .block-content-what {
-    grid-template-columns: repeat(1, 1fr);
     gap: 19px;
     width: 355px;
     margin-left: 10px;
   }
 
   .block_how {
-    flex-direction: column;
     gap: 14px;
     width: 375px;
     margin-top: 51px;
@@ -806,7 +699,6 @@ html {
   }
 
   .block_gallery {
-    display: grid;
     gap: 10px;
     width: 375px;
     margin-bottom: 40px;
@@ -815,7 +707,6 @@ html {
   .block-content-gallery {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     width: 355px;
     margin-left: 10px;
   }
@@ -849,10 +740,6 @@ html {
   .footer {
     max-width: 375px;
     min-height: 668px;
-  }
-
-  .footer__title {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .decoration__point-bottom {
