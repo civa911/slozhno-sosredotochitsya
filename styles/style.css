@@ -564,7 +564,7 @@
   }
 
   .block-content-how {
-    width: 395px;
+    width: 380px;
     margin: 15px;
   }
 
@@ -575,8 +575,6 @@
   .block-content-gallery {
     display: flex;
     flex-direction: column;
-    width: 385px;
-    margin-left: 20px;
   }
 
   .footer {
