@@ -6,8 +6,8 @@
   width: 100%;
   max-width: 1024px;
   font-size: 18px;
-  background-image: var(--bg-image);
   background-color: var(--bg-color);
+  background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -573,7 +573,10 @@
   }
 
   .block-content-gallery {
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 385px;
+    margin-left: 20px;
   }
 
   .footer {
