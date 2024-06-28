@@ -1,4 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+/* * { outline: 1px solid red; } */
+
 .page {
   display: flex;
   flex-direction: column;
@@ -419,8 +422,7 @@
   }
 
   .decoration-nav {
-    justify-content: end;
-    align-items: start;
+    flex-direction: column-reverse;
   }
 
   .main-content {
@@ -432,9 +434,7 @@
   }
 
   .header__theme-menu {
-    position: absolute;
-    top: 6px;
-    right: 20px;
+    margin: 0;
   }
 
   .rec-indicator {
@@ -446,7 +446,8 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-top: 16vh;
+    margin-top: 14.1vh;
+    margin-right: 20px;
   }
 
   .header__text-cont {
@@ -499,10 +500,6 @@
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
-  .decoration__point-bottom {
-    margin-top: 138px;
-  }
-
   /* .main-content-titile-gallery {
     margin-left: 20px;
   } */
@@ -533,8 +530,12 @@
   .header__title {
     width: min-content;
     padding-left: 10px;
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    /* font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); */
     line-height: 95.7px;
+  }
+
+  .header__theme-menu-list {
+    margin-top: 46px;
   }
 
   .rec-indicator {
@@ -580,10 +581,6 @@
   .footer {
     max-width: 425px;
   }
-
-  .decoration__point-bottom {
-    margin-top: 138px;
-  }
 }
 
 /* 375x668 */
@@ -617,10 +614,10 @@
     margin-bottom: 30px;
   }
 
-  .decoration-nav {
+  /* .decoration-nav {
     gap: 20px;
     margin-bottom: 68px;
-  }
+  } */
 
   .rec-indicator {
     margin-top: 14px;
@@ -641,9 +638,14 @@
     padding-top: 40px;
   }
 
-  .header__theme-menu {
+  /* .header__theme-menu {
     right: 10px;
     bottom: 557px;
+  } */
+
+  .header__theme-menu-list {
+    margin-top: 36px;
+    margin-right: 11px;
   }
 
   .header__text-cont {
@@ -706,45 +708,15 @@
   }
 
   .block-content-gallery {
-    display: flex;
-    flex-direction: column;
+    gap: 10px;
+    /* display: flex;
+    flex-direction: column; */
     width: 355px;
     margin-left: 10px;
-  }
-
-  /* галлерея */
-  .sunset {
-    width: 355px;
-    height: 142px;
-  }
-
-  .ice-cream {
-    width: 355px;
-    height: 355px;
-  }
-
-  .tape {
-    width: 355px;
-    height: 237px;
-  }
-
-  .books {
-    width: 355px;
-    height: 355px;
-  }
-
-  .street {
-    width: 355px;
-    height: 237px;
   }
 
   .footer {
     max-width: 375px;
     min-height: 668px;
-  }
-
-  .decoration__point-bottom {
-    margin-top: 30px;
-    margin-left: 11px;
   }
 }
